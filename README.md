@@ -18,4 +18,16 @@ In networking we will change the "NIC network security group", its kind of a fir
 The purpose of the security group is to allow all traffic to pass. Remove the default rule and hit "Add an inbound rule"
 In Desitination port range put a "*" mark, Protocal: ANY, Action: Allow, Priority: 100, and name the rule. Our case "DANGER_ANY_IN", Then hit okay.
 
-Final step is to hit "Review + create"
+Final step is to hit "Review + create" This will take some time to create. Meanwhile we can create log analytics workspaces
+
+We will be ingesting windows events log from the virtual machine we just created with our own custom log that contains geographical information so we can see where the attackers are coming from. 
+Next go to log analytics workspaces and hit "create log analytics workspace". In the resource group, select the resource group we created. In our case "Honeypotlab" and give it a name, example "law-honeypot" and select your region.
+
+Next go to Security Center. Click oin pricing & Settings, then click on the "law-honeypot" we just made and turn on "Azure defender on", leave servers ON but turn OFF the SQL servers on machines as we dont need it.
+Then head to Data collection on the left panel and press "All events", then hit save.
+
+Go back to log analytics workspace and connect it to the "Honeypot-VM". Click "law-honeypot" workspace, go to virtual machines and select the "honeypot-vm" then "Connect"
+
+Now we will create Azure Sentinel. This is our SIEM that we will use to visualize the attack data. Head to Azure sentinel, hit create and then add "law-honeypot"
+
+Once the virtual machine is finished creating, head to Virtual machine, click on the machine and then copy the public IP address that has been created for the machine. Open up Remote Desktop, paste the IP-address and connect. Then click on more choices, use a different account and login with the username and password you provided. 
