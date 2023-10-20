@@ -31,3 +31,9 @@ Go back to log analytics workspace and connect it to the "Honeypot-VM". Click "l
 Now we will create Azure Sentinel. This is our SIEM that we will use to visualize the attack data. Head to Azure sentinel, hit create and then add "law-honeypot"
 
 Once the virtual machine is finished creating, head to Virtual machine, click on the machine and then copy the public IP address that has been created for the machine. Open up Remote Desktop, paste the IP-address and connect. Then click on more choices, use a different account and login with the username and password you provided. 
+
+Open windows firewall (wf.msc), go to windows defender firewall properties, in Domain- private and public profile turn of the firewall state then hit apply.
+
+We also want an API  that convert the IP address from the windows security logs to get long/lat location, which we then can add to a map and track where the attackers are from. You need to register in https://ipgeolocation.io mainly to get an API key which you have to paste in a powershell scrip on your VM
+
+https://ipgeolocation.io
