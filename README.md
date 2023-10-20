@@ -34,6 +34,6 @@ Once the virtual machine is finished creating, head to Virtual machine, click on
 
 Open windows firewall (wf.msc), go to windows defender firewall properties, in Domain- private and public profile turn of the firewall state then hit apply.
 
-We also want an API  that convert the IP address from the windows security logs to get long/lat location, which we then can add to a map and track where the attackers are from. You need to register in https://ipgeolocation.io mainly to get an API key which you have to paste in a powershell scrip on your VM
+We also want an API  that convert the IP address from the windows security logs to get long/lat location, which we then can add to a map and track where the attackers are from. This simply stores a seperate log which we can use later. You need to register in https://ipgeolocation.io mainly to get an API key which you have to paste in a powershell scrip on your VM
 
 https://ipgeolocation.io
