@@ -37,3 +37,13 @@ Open windows firewall (wf.msc), go to windows defender firewall properties, in D
 We also want an API  that convert the IP address from the windows security logs to get long/lat location, which we then can add to a map and track where the attackers are from. This simply stores a seperate log which we can use later. The free version will let you log 1000 request per day. You need to register in https://ipgeolocation.io mainly to get an API key which you have to paste in a powershell scrip on your VM
 
 https://ipgeolocation.io
+
+<b>Creating a custom log<b>
+
+Go to Log analytics, click on law-honeypot1, select custom logs and add new custom logs. Here you need to upload a custom log. The custom log can be found in https://ipgeolocation.io
+
+In recoird delimiter, check that everything is okay
+
+In collection path enter the windows path that the logs that will be stored in the honeypot VM
+
+Details name the custom log example FAILED_RDP_WITH_GEO
