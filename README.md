@@ -8,7 +8,7 @@ Make sure the subscription is selected on "Pay-as-you-go", as it will only use u
 
 Create a new resource group, we will be using all the lab resources in this group. We will call it "Honeypotlab"
 
-Name the virtual machine "Honeypot-vm", leave the image and size as default. Image: Windows 10 pro Version 20H2 - Gen1, Size: Standard_D2s_v3 - 2 vcpus, 8 Gig memory
+Name the virtual machine "Honeypot-vm", leave the image and size as default. Image: Windows 11 pro Version 22H2 - Gen1, Size: Standard_D2s_v3 - 2 vcpus, 8 Gig memory
 
 Create a username and password for the VM. Tick the "Licensing" and hit Next:DISK
 
