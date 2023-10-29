@@ -4,11 +4,9 @@ The purpose of the lab is to great a Azure cloud environment using the build in 
 
 First create a virtual machine (Search virtual machines and click on the service), which purpose is to be exposed, or a honey pot, then click create -> Azure virtual machine.
 
-Make sure the subscription is selected on "Pay-as-you-go", as it will only use up the payment of the free resources provided when the account was created
-
 Create a new resource group, we will be using all the lab resources in this group. We will call it "Honeypotlab"
 
-Name the virtual machine "Honeypot-vm", leave the image and size as default. Image: Windows 11 pro Version 22H2 - Gen1, Size: Standard_D2s_v3 - 2 vcpus, 8 Gig memory
+Name the virtual machine "Honeypot-vm", leave the image and size as default. Image: Windows 11 pro Version 22H2 - Gen1, Size: Standard_D2s_v3 - 2 vcpus, 8 Gig memory. Make sure you use US region if you are using free account as its the only allowed region.
 
 Create a username and password for the VM. Tick the "Licensing" and hit Next:DISK
 
