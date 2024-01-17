@@ -16,4 +16,7 @@ In Desitination port range put a "*" mark, Protocal: ANY, Action: Allow, Priorit
 Final step is to hit "Review + create" This will take some time to create. Meanwhile we can create log analytics workspaces
 
 Now we will be installing Splunk on our own computer. Download Splunk Enterprise from www.splunk.com. Splunk Enterprise has a free trial version that allows 500mb per day, and thats plenty for our case. You will need to create an account for this.
+During installation you will be prompt to enter username and password. This credential is for logging in on the webinterface of splunk. When finished installation, login on http://127.0.0.1:8000 or the IP address which the splunk server is on.
+
+Now we need to setup a receiving port. In Splunk, go to Settings, then forwarding and recieving, and under Recieve data hit +add new. Enter the default port 9997 and hit save
 
