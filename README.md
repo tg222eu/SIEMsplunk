@@ -2,9 +2,10 @@
 
 The purpose of the lab is to collect Windows event logs to Splunk of brute force attack on RDP. Once setup we will have an exposed VM that logs traffic what an potentianl attacker does aka SIEM. The guide will be covered from a complete beginner level.
 
-First we need a virtual machine. It could be a virtual machine created on your own computer, just make sure it within a isolated network. For this lab we will be using Microsoft Azure Cloud. 
 
 <h2>Creating cloud machine</h2>
+
+First we need a virtual machine. It could be a virtual machine created on your own computer, just make sure it within a isolated network. For this lab we will be using Microsoft Azure Cloud. 
 
 Head to Azure cloud to create a virtual machine
 (Search virtual machines and click on the service), which purpose is to be exposed, or a honey pot, then click create -> Azure virtual machine.
