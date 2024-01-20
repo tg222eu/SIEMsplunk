@@ -11,7 +11,7 @@ First we need a virtual machine. It could be a virtual machine created on your o
 Head to Azure cloud to create a virtual machine
 (Search virtual machines and click on the service), which purpose is to be exposed, or a honey pot, then click create -> Azure virtual machine.
 Create a new resource group, we will be using all the lab resources in this group. We will call it "Honeypotlab"
-Name the virtual machine "Honeypot-vm", leave the image and size as default. Image: Windows 11 pro Version 22H2 - Gen1, Size: Standard_D2s_v3 - 2 vcpus, 8 Gig memory. Make sure you use US region if you are using free account as its the only allowed region.
+Name the virtual machine "HoneypotVM", leave the image and size as default. Image: Windows 11 pro Version 22H2 - Gen1, Size: Standard_D2s_v3 - 2 vcpus, 8 Gig memory. Make sure you use US region if you are using free account as its the only allowed region.
 Create a username and password for the VM. Tick the "Licensing" and hit Next:DISK
 Leave everything default in DISK and go straight to Networking
 In networking we will change the "NIC network security group", its kind of a firewall. Hit Advanced and "Configure network security group" will appear. Create a new one
@@ -32,11 +32,11 @@ Now login to the cloud computer, download and install Splunk Universal Forwarder
 
 ![alt text](https://github.com/tg222eu/SIEMsplunk/blob/main/datasummary.JPG)
 
-Now the machine should be sending logs to the server. Make sure by loggin into the server, press search&report, press "Data Summary" and your host should appear with some atleast system generated logs. If logs are generated then let the machine run for as long as you wish.
+Now the machine should be sending logs to the server. Make sure by loggin into the server, press search&report, press "Data Summary" and your host should appear with some atleast system generated logs. If logs are generated then let the machine run for as long as you wish. In this case there are two hosts that have collected logs. I will be focusing on HoneypotVM
 
 <h2>Result</h2>
 
-Here is the result of running the machine for 7 days. 
+Here is the result of running the machine for 7 days. The event code 4625 stand for "failed login", which have accumulated 148 331 events. Below you will see a visualisation of where the failed logins occured in the world by tracking src_ip, which is the IP used for logging into RDP. The second image shows the username that was tried to login with. Administrator being the highest with 33 612 attempts
 
 ![alt text](https://github.com/tg222eu/SIEMsplunk/blob/main/map.JPG)
 
