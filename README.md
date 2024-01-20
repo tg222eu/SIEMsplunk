@@ -25,3 +25,7 @@ Now login to the cloud computer, download and install Splunk Universal Forwarder
 Now the machine should be sending logs to the server. Make sure by loggin into the server, press search&report, press "Data Summary" and your host should appear with some atleast system generated logs. If logs are generated then let the machine run for as long as you wish.
 
 Here is the result of running the machine for 7 days. 
+
+![alt text](https://github.com/tg222eu/SIEMsplunk/blob/main/map.JPG)
+
+![alt text](https://github.com/tg222eu/SIEMsplunk/blob/main/account.JPG)
