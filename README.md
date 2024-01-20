@@ -2,6 +2,7 @@
 
 The purpose of the lab is to collect Windows event logs to Splunk of brute force attack on RDP. Once setup we will have an exposed VM that logs traffic what an potentianl attacker does aka SIEM. The guide will be covered from a complete beginner level.
 
+Prerequisite: Have an account in Microsoft Azure and Splunk
 
 <h2>Creating cloud machine</h2>
 
