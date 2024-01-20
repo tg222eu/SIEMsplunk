@@ -20,4 +20,8 @@ During installation you will be prompt to enter username and password. This cred
 
 Now we need to setup a receiving port. In Splunk, go to Settings, then forwarding and recieving, and under Recieve data hit +add new. Enter the default port 9997 and hit save
 
-Now login to the cloud computer, download and install Splunk Universal Forwarder. Make sure you do the "Customize Option". Hit next until you get to the options what to logs. Select all boxes under Windows Event Logs and During the installation you will need to enter the IP address of your splunkserver, if its on the same computer then enter 127.0.0.1 and port 9997 as you configured. 
+Now login to the cloud computer, download and install Splunk Universal Forwarder. Make sure you do the "Customize Option". Hit next until you get to the options what to logs. Select all boxes under Windows Event Logs and During the installation you will need to enter the IP address of your splunkserver, if its on the same computer then enter 127.0.0.1 and port 9997 as you configured.
+
+Now the machine should be sending logs to the server. Make sure by loggin into the server, press search&report, press "Data Summary" and your host should appear with some atleast system generated logs. If logs are generated then let the machine run for as long as you wish.
+
+Here is the result of running the machine for 7 days. 
