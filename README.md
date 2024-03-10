@@ -28,7 +28,7 @@ Now we need to setup a receiving port. In Splunk, go to Settings, then forwardin
 
 ![alt text](https://github.com/tg222eu/SIEMsplunk/blob/main/SplunkForwarderInstaller.JPG)
 
-Now login to the cloud computer, download and install Splunk Universal Forwarder. Make sure you do the "Customize Option". Hit next until you get to the options what to logs. Select all boxes under Windows Event Logs and During the installation you will need to enter the IP address of your splunkserver, if its on the same computer then enter 127.0.0.1 and port 9997 as you configured.
+Now login to the cloud computer, download and install Splunk Universal Forwarder. Make sure you do the "Customize Option". Hit next until you get to the options what to logs. Select all boxes under Windows Event Logs and During the installation you will need to enter the IP address of your splunkserver, not for the deployment server as we are not using it, if its on the same computer then enter 127.0.0.1 and port 9997 as you configured.
 
 ![alt text](https://github.com/tg222eu/SIEMsplunk/blob/main/datasummary.JPG)
 
